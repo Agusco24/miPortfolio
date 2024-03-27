@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+
+{% block title %} Info Blog-Post {% endblock %}
+
+{% block content %}
+
+{% include "navCV.html" %}
+
+<h1 class="text-center">Todo-List</h1>
+
+<hr style="color: rgb(27, 33, 38);">
+<br>
+<div class="btn-group me-2 " role="group" aria-label="First group"  >
+  <a href=" {{url_for('apiRest')}} " class="btn btn-outline-secondary" ><</a>
+  <a href=" {{url_for('blogPost')}} " class="btn btn-outline-secondary ">></a>
+</div>
+
+<div class="container col-xxl-8 px-4 py-5">
+  
+  <div class="row flex-lg-row-reverse aling-items-center g-5 py-5">
+
+      <div class="col-10 col-sm-8 col-lg-6">
+          <img src=" {{ url_for('static', filename = 'img/todo-list.jpg')}} " class="d-block mx-sm-auto img-fuiid" 
+              height="150" loading="lazy">
+      </div>
+      <div class="col-lg-6">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Descripción
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Todo List es una app web creada con flask, la cual nos permite registrarnos e iniciar sesión, 
+                para poder crear nuestra lista de tareas y así tener mayor organización de nuestras responsabilidades.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Video representativo
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                  <video controls src=" {{ url_for('static', filename = 'vid/todoList.mp4')}}  " height="250"></video>
+                  
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Enlace de código
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body"> 
+                  <a href="https://github.com/Agusco24/todo-list-flask">Ver en GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>  
+
+
+      </div>
+  </div>
+</div>
+
+
+  <hr style="color: rgb(27, 33, 38);">
+  <br>
+
+  {% include "footer.html" %}
+
+{% endblock %}

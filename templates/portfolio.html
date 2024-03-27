@@ -1,0 +1,40 @@
+
+<section class="container p-5" id="portfolio">
+    <h2 class="text-center">Mis proyectos</h2>
+    <hr class="mb-5">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+
+        <div class="col">
+            <div class="card">
+                <img src=" {{ url_for('static', filename = 'img/todo-list.jpg')}} " alt="Imagen de proyecto todo-list" 
+                    class="d-block mx-lg-auto img-fluid">
+                <div class= "card-body">
+                    <h5 class="card-title"> Lista de tareas con Flask</h5>
+                    
+                    <a href=" {{ url_for('todoList') }} " class="nav-link text-primary" >Más información aquí.</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src=" {{ url_for('static', filename = 'img/blog-post.jpg')}} " alt="Imagen de proyecto blog-post" 
+                    class="d-block mx-lg-auto img-fluid">
+                <div class= "card-body">
+                    <h5 class="card-title"> Blog posts con Flask </h5>
+                    
+                    <a href="{{ url_for('blogPost') }}" class="nav-link text-primary" >Más información aquí.</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src=" {{ url_for('static', filename = 'img/api-rest.jpg')}} " alt="Imagen de proyecto api-rest" 
+                    class="d-block mx-lg-auto img-fluid">
+                <div class= "card-body">
+                    <h5 class="card-title"> Api-Rest con Flask </h5>
+                    <a href="{{ url_for('apiRest') }}" class="nav-link text-primary" >Más información aquí.</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

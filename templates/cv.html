@@ -1,0 +1,197 @@
+{% extends "base.html" %}
+
+{% block title %} CV {% endblock %}
+
+
+{% block content %}
+
+{% include "navCV.html" %}
+
+<div class="container col-xxl-8 px-8 py-1">
+    <div class="row flex-lg-row g-8 py-1">
+        <div class="columna-foto col-10 col-sm-8 col-lg-3">
+            <br><br><br>
+            <img src=" {{ url_for('static', filename = 'img/confondogris.png')}} " class="d-block mx-sm-auto img-fuiid" height="250" loading="lazy">
+            
+            <br>
+            <hr style="color: rgb(27, 33, 38);">
+            <h5> <b>Perfil</b> </h5>
+            <p>
+                Soy una persona autodidactica a la cual le gusta estar bien informada de los temas que le apasionan. 
+                La programación es uno de esos temas, así como también me gusta practicar el ajedrez y jugar video juegos en equipo donde 
+                cada miembro debe ocupar un rol.
+            </p>
+            
+            <hr style="color: rgb(27, 33, 38);">
+            <h5> <b>Objetivo profesional</b> </h5>
+            <p>
+                Mi objetivo es brindar mis servicios acompañado del profesionalismo y la seriedad con la que me gusta afrontar los desafíos, 
+                para así después cumplir metas y objetivos personales.
+            </p>
+            <hr style="color: rgb(27, 33, 38);">
+            <h5> <b>Expectativas</b> </h5>
+            <p>
+                Mis expectativas es poder conectar con el equipo de trabajo para así cumplir los objetivos del equipo y la empresa.
+            </p>
+            <hr style="color: rgb(27, 33, 38);">
+            <h5> <b>Contacto</b> </h5>
+            <p>
+                Teléfono: 3512305123
+
+            </p>
+            <p>Correo Electronico: aguscolongne@gmail.com</p>
+            <hr style="color: rgb(27, 33, 38);">
+
+
+        </div>
+
+        <div class="col-tex-left col-lg-6">
+            <br>
+            <br>
+            <br>
+            <h2 class="display-4"> Claudio Agustín Colongne </h2>
+            <br><br>
+            <p class="lead fs-3"> Desarrollador Web | Back-end</p>
+            
+
+            <hr class="my-4">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Experiencias
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <h4>Arrow Academy - Coach y Profesor</h4>
+                            <p>julio de 2022 - diciembre 2022</p>
+                            <br>
+                            <p>
+                                <b>En el puesto me encargué de:</b>
+                                <br>
+                                Enseñar los primeros pasos en Python.
+                                <br>
+                                Enseñar POO
+                                <br>
+                                Instalación y explicación del framework Django
+                                <br><br>
+                                Mi experiencia en la empresa fue confortable y desafiante a la vez, desafiante porque participe
+                                en la generación de ideas para mejorar y facilitar el aprendizaje de los alumnos, logrando que 
+                                con dichas ideas la empresa aumentara cada semana en un %30 la cantidad de alumnos y así 
+                                empezar a enseñar en el exterior, como México, Uruguay, Perú y Venezuela., además logrando 
+                                liderar las ventas semanales de cursos avanzados durante más de 1 mes.
+
+                                
+                            </p>
+
+                            <p><b>Adjunto, carta de recomendacion y referencia. </b></p>
+                            <hr style="color: rgb(27, 33, 38);">
+                            <br>
+                            <h4>Proyecto final – Universidad de la punta</h4>
+                            <p>septiembre de 2022 - nobiembre 2022</p>
+                            <br>
+                            <p>
+                                La etapa se dividió en 2 software desarrollados con JAVA en <br>Netbeans 8.2.
+                                <br><br>
+                                El primer proyecto trato de una app administrativa de una universidad, donde me encargue 
+                                del back-end, logrando entregar en tiempo y forma en coordinación con el equipo de 4 
+                                personas, además logrando pasar la prueba de profesores intentando hacer que se rompa, en 
+                                este proyecto también logre ayudar a mi compañero que se encargaba de la conexión a base 
+                                de datos, logrando con éxito el pase a la siguiente aplicación.
+                                <br><br>
+                                El segundo proyecto trato de una app administrativa de ventas de paquetes turísticos, donde 
+                                me encargue del front-end de la app, logrando el asombro y admiración de los profesores y 
+                                mentores por la innovación desarrollada, además logre ayudar a mi compañero con la conexión 
+                                a base de datos y a mi compañera con el back-end, logrando la aprobación de la cursada.
+
+                            </p>
+
+                            
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Estudios
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <h4>Egg</h4>
+                            <p>marzo de 2022 - junio 2022</p>
+                            <br>
+                            <p>En Egg prendí la lógica de programación, esta academia tiene la particularidad que te
+                                enseñan el tema y luego pasas a salas reducidas con compañeros y cada uno va compartiendo
+                                pantalla y explicando lo que sabe, si hay dudas o no sé entiende el tema, se pide ayuda. 
+                                Con el paso del curso aprendí a enseñar y así reafirmar conocimientos.
+                            </p>
+                            <p><b>Adjunto certificado. </b></p>
+                            <hr style="color: rgb(27, 33, 38);">
+                            <br>
+
+                            <h4>Arrow academy</h4>
+                            <p>junio 2022 - julio 2022</p>
+                            <br>
+                            <p> En Arrow academy aprendí los primeros pasos de python, Programación Orientada a Objetos
+                                (POO), donde se observó por las autoridades de la academia mis métodos de estudio, mi predisposición 
+                                para enseñar y mi resolución de problemas, para más tarde contratarme como nuevo profesor de la 
+                                academia.
+                            </p>
+                            <p><b>Adjunto certificado. </b></p>
+                            <hr style="color: rgb(27, 33, 38);">
+                            <br>
+                            <h4>Argentina Programa 4.0 (ULP)</h4>
+                            <p>nobiembre 2022 - diciembre 2023</p>
+                            <br>
+                            <p>La universidad de la punta de San Luis (ULP) fue la encargada de dictar el curso de Argentina programa 4.0,
+                                en dicha universidad se basó en el sistema de enseñanza de Egg (antes mencionado), en donde volví a ver 
+                                lógica de programación, ya que empezaba desde cero y no podía adelantarme esa materia, una vez terminada
+                                se empezó con los primeros pasos con JAVA, luego sé siguió con POO, más tarde se incluyo base de datos, y 
+                                finalmente para aprobar se hicieron grupos de 4 personas para simular un equipo de trabajo y realizar 2 aplicaciones 
+                                de escritorio, donde junto con mi equipo aprobamos ambas aplicaciones.
+                            </p>
+                            <p><b>Adjunto certificado. </b></p>
+                            <hr style="color: rgb(27, 33, 38);">
+                            <br>
+                            <h4>Otros conocimientos</h4>
+                            <h5>Flask - Udemy</h5>
+                            <p>Python y Flask. Desarrollo web y APIS tipo REST con Flask</p>
+                            <p>Flask - Construye aplicaciones web profesionales con Python</p>
+                            <br>
+                            <h5>Mongo DB - Udemy</h5>
+                            <p>Curso Completo de Bases de datos MongoDB y NoSQL.</p>
+
+                            <h5>Otras Bases de datos</h5>
+                            <p>MySQL con MariaDB en XAPP</p>
+                            <p>SQLAlchemy</p>
+                            <p>PostgreSQL</p>
+                            <hr style="color: rgb(27, 33, 38);">
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+{% include "footer.html" %}
+
+{% endblock %}

@@ -1,0 +1,43 @@
+.socila-icon{
+    color: white;
+    margin: 0 5px;
+    font-size: 30px; 
+
+}
+
+.socila-icon:hover{
+    font-size: 40px;
+    color: rgb(15, 75, 224);
+}
+
+.socila-icon2{
+    color: white;
+    margin: 0 5px;
+    font-size: 30px; 
+
+}
+
+.socila-icon2:hover{
+    font-size: 40px;
+    color: rgb(171, 10, 171);
+}
+
+.socila-icon3{
+    color: white;
+    margin: 0 5px;
+    font-size: 30px; 
+
+}
+
+.socila-icon3:hover{
+    font-size: 40px;
+    color: rgb(34, 214, 34);
+}
+
+.columna-foto{
+    margin-left: 2.5cm;
+    margin-right: 4cm;
+
+   
+    
+}
